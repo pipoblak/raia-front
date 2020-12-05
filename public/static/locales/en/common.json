@@ -10,6 +10,25 @@
     }
   },
   "banner": {
-    "title": "Make this site <b>responsive</b> with <b>REACT</b> using <b>styled-components</b>"
-  }
+    "title": "Make this site <b>responsive</b> with <b>REACT</b> using <b>styled-components</b>",
+    "subtitle": "The used font is Open Sans from 300 to 800. </br> example: \"Open Sans\", Helvetica, sans-serif, arial;</br> The colors are:"
+  },
+  "first_card": {
+    "title": "Responsive DESKTOP Site",
+    "description": "When press the button <b>Read more...</b> The rest of information need to show in a scrolldown.",
+    "add_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan, leo non ultrices mattis, mauris lorem venenatis ligula, et viverra neque augue posuere ex. Phasellus massa orci, gravida in metus vitae, congue auctor tortor. Nunc sollicitudin nulla massa, id tincidunt lorem ornare quis. Maecenas cursus dui sed ipsum molestie, et vulputate augue volutpat. Integer cursus vehicula risus, eu facilisis quam tempus id. Sed ligula erat, vestibulum id urna et, finibus mollis augue. Nunc condimentum, ex et convallis tristique, lorem urna ultricies dui, vitae pulvinar risus lorem sit amet nulla. Maecenas suscipit ultricies nunc. Nulla leo metus, pulvinar a orci non, egestas dignissim nulla. Nullam ut condimentum eros. Nulla ut rutrum nibh. Aenean auctor tortor dui, consequat convallis arcu porta et. Sed porttitor, arcu eu elementum ullamcorper, turpis lectus consequat arcu, finibus eleifend nibh augue quis ex.",
+    "button": "Read more..."
+  },
+  "second_card": {
+    "title": "Responsive TABLET Site",
+    "description": "When press the button <b>Read more...</b> information will need to show complete in a popup on screen.",
+    "add_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan, leo non ultrices mattis, mauris lorem venenatis ligula, et viverra neque augue posuere ex. Phasellus massa orci, gravida in metus vitae, congue auctor tortor. Nunc sollicitudin nulla massa, id tincidunt lorem ornare quis. Maecenas cursus dui sed ipsum molestie, et vulputate augue volutpat. Integer cursus vehicula risus, eu facilisis quam tempus id. Sed ligula erat, vestibulum id urna et, finibus mollis augue. Nunc condimentum, ex et convallis tristique, lorem urna ultricies dui, vitae pulvinar risus lorem sit amet nulla. Maecenas suscipit ultricies nunc. Nulla leo metus, pulvinar a orci non, egestas dignissim nulla. Nullam ut condimentum eros. Nulla ut rutrum nibh. Aenean auctor tortor dui, consequat convallis arcu porta et. Sed porttitor, arcu eu elementum ullamcorper, turpis lectus consequat arcu, finibus eleifend nibh augue quis ex.",
+    "button": "Read more..."
+  },
+  "third_card": {
+    "title": "Responsive MOBILE Site",
+    "description": "When press the button <b>change theme</b> change the site theme to blackfriday of your will.",
+    "button": "change theme"
+  },
+  "copyright": "RD 2017 All rights reserved"
 }

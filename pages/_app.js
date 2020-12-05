@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
 import TranslateInstance from '../i18n';
 import GlobalStyle from '../styles/global';
-import themes from '../styles/themes';
+import themes, { ThemeContext } from '../styles/themes';
 
 const MyApp = ({ Component, pageProps }) => {
   const [theme, setTheme] = useState(themes.default);
@@ -13,12 +13,12 @@ const MyApp = ({ Component, pageProps }) => {
     TranslateInstance.i18n.changeLanguage('ptBR');
   });
   return (
-    <>
+    <ThemeContext.Provider value={[theme, setTheme]}>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <Component {...pageProps} setTheme={setTheme} />
+        <Component {...pageProps} />
       </ThemeProvider>
-    </>
+    </ThemeContext.Provider>
   );
 };
 

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Container from '../components/Container';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
+import Posts from '../components/Posts';
 import TranslateInstance from '../i18n';
 
 export const Home = ({ t }) => {
@@ -23,6 +24,7 @@ export const Home = ({ t }) => {
       <Container>
         <Header />
         <Banner />
+        <Posts />
       </Container>
     </>
   );

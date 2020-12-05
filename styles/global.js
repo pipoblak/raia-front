@@ -8,8 +8,9 @@ const GlobalStyle = createGlobalStyle`
     font-family: Open Sans, Helvetica, sans-serif, arial;
   }
   #__next{
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
   }
   * {
     box-sizing: border-box;

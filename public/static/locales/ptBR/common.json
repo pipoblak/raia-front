@@ -12,5 +12,23 @@
   "banner": {
     "title": "Crie este site <b>responsivo</b> com <b>REACT</b> utilizando <b>styled-components</b>",
     "subtitle": "A fonte utilizada é a Open Sans de 300 a 800. </br> exemplo: \"Open Sans\", Helvetica, sans-serif, arial;</br> Já as cores são:"
-  }
+  },
+  "first_card": {
+    "title": "Site Responsivo DESKTOP",
+    "description": "Quando pressionado o botão <b>Leia mais...</b> O restante da informação deverá aparecer em scrolldown.",
+    "add_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan, leo non ultrices mattis, mauris lorem venenatis ligula, et viverra neque augue posuere ex. Phasellus massa orci, gravida in metus vitae, congue auctor tortor. Nunc sollicitudin nulla massa, id tincidunt lorem ornare quis. Maecenas cursus dui sed ipsum molestie, et vulputate augue volutpat. Integer cursus vehicula risus, eu facilisis quam tempus id. Sed ligula erat, vestibulum id urna et, finibus mollis augue. Nunc condimentum, ex et convallis tristique, lorem urna ultricies dui, vitae pulvinar risus lorem sit amet nulla. Maecenas suscipit ultricies nunc. Nulla leo metus, pulvinar a orci non, egestas dignissim nulla. Nullam ut condimentum eros. Nulla ut rutrum nibh. Aenean auctor tortor dui, consequat convallis arcu porta et. Sed porttitor, arcu eu elementum ullamcorper, turpis lectus consequat arcu, finibus eleifend nibh augue quis ex.",
+    "button": "Leia mais..."
+  },
+  "second_card": {
+    "title": "Site Responsivo TABLET",
+    "description": "Quando pressionado o botão <b>Leia mais...</b> informação deverá aparecer completa em um popup na tela.",
+    "add_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan, leo non ultrices mattis, mauris lorem venenatis ligula, et viverra neque augue posuere ex. Phasellus massa orci, gravida in metus vitae, congue auctor tortor. Nunc sollicitudin nulla massa, id tincidunt lorem ornare quis. Maecenas cursus dui sed ipsum molestie, et vulputate augue volutpat. Integer cursus vehicula risus, eu facilisis quam tempus id. Sed ligula erat, vestibulum id urna et, finibus mollis augue. Nunc condimentum, ex et convallis tristique, lorem urna ultricies dui, vitae pulvinar risus lorem sit amet nulla. Maecenas suscipit ultricies nunc. Nulla leo metus, pulvinar a orci non, egestas dignissim nulla. Nullam ut condimentum eros. Nulla ut rutrum nibh. Aenean auctor tortor dui, consequat convallis arcu porta et. Sed porttitor, arcu eu elementum ullamcorper, turpis lectus consequat arcu, finibus eleifend nibh augue quis ex.",
+    "button": "Leia mais..."
+  },
+  "third_card": {
+    "title": "Site Responsivo MOBILE",
+    "description": "Quando pressionado o botão <b>alterar tema</b> modifique o tema do site para blackfriday a seu gosto.",
+    "button": "alterar tema"
+  },
+  "copyright": "RD 2017 Todos os direitos reservados"
 }
