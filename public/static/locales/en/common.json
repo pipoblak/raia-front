@@ -8,5 +8,8 @@
       "react": "REACT",
       "redux": "REDUX"
     }
+  },
+  "banner": {
+    "title": "Make this site <b>responsive</b> with <b>REACT</b> using <b>styled-components</b>"
   }
 }

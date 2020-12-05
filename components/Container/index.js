@@ -12,7 +12,7 @@ const Element = ({ children }) => (
 
 Element.propTypes = {
   theme: PropTypes.object.isRequired,
-  children: PropTypes.object
+  children: PropTypes.any
 };
 
 Element.defaultProps = {

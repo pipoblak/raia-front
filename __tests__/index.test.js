@@ -1,7 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import Home from '../pages/index';
 import Header from '../components/Header';
-import { Wrapper, Link, Logo } from '../components/Header/styles';
+import Banner from '../components/Banner';
+import { Wrapper as HeaderWrapper, Link, Logo } from '../components/Header/styles';
+import { Wrapper as BannerWrapper } from '../components/Header/styles';
 import TranslateInstance from '../i18n';
 
 describe('Home', () => {
@@ -9,6 +11,7 @@ describe('Home', () => {
   beforeEach(async () => {
     await Home.getInitialProps();
     await Header.getInitialProps();
+    await Banner.getInitialProps();
     I18nApp = TranslateInstance.appWithTranslation(
       TranslateInstance.withTranslation('common')(Home)
     );
@@ -22,7 +25,7 @@ describe('Home', () => {
   describe('Header', () => {
     it('renders', () => {
       render(<I18nApp />);
-      const headerClass = Wrapper.styledComponentId;
+      const headerClass = HeaderWrapper.styledComponentId;
       const headerRoot = document.getElementsByClassName(headerClass);
       expect(headerRoot.length).toBe(1);
     });
@@ -37,6 +40,15 @@ describe('Home', () => {
       const linksClass = Link.styledComponentId;
       const linksRoot = document.getElementsByClassName(linksClass);
       expect(linksRoot.length).toBe(5);
+    });
+  });
+
+  describe('Banner', () => {
+    it('renders', () => {
+      render(<I18nApp />);
+      const bannerClass = BannerWrapper.styledComponentId;
+      const bannerRoot = document.getElementsByClassName(bannerClass);
+      expect(bannerRoot.length).toBe(1);
     });
   });
 });

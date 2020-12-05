@@ -8,5 +8,9 @@
       "react": "REACT",
       "redux": "REDUX"
     }
+  },
+  "banner": {
+    "title": "Crie este site <b>responsivo</b> com <b>REACT</b> utilizando <b>styled-components</b>",
+    "subtitle": "A fonte utilizada é a Open Sans de 300 a 800. </br> exemplo: \"Open Sans\", Helvetica, sans-serif, arial;</br> Já as cores são:"
   }
 }

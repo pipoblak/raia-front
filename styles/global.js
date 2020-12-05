@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
   body, html, #__next {
     padding: 0;
     margin: 0;
-    font-family: Open Sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: Open Sans, Helvetica, sans-serif, arial;
   }
   #__next{
     height: 100vh;

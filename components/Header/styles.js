@@ -7,6 +7,7 @@ export const Wrapper = styled.header`
   display: flex;
   flex-wrap: wrap;
   border-bottom: solid 2px #e2e2e2;
+  font-family: Open Sans, Helvetica, sans-serif, arial;
   @media (max-width: 510px) {
     justify-content: center;
     max-height: 130px;

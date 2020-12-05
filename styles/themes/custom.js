@@ -1,8 +1,8 @@
 export default {
-  primary: '#007f56',
-  secondary: '#868686',
-  first_card: '#FE9481',
-  second_card: '#FCDA92',
-  third_card: '#9C8CB9',
+  primary: '#1abc9c',
+  secondary: '#2c3e50',
+  first_card: '#e67e22',
+  second_card: '#f1c40f',
+  third_card: '#16a085',
   bg_primary: ''
 };

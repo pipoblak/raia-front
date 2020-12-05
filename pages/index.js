@@ -3,6 +3,7 @@ import Head from 'next/head';
 import PropTypes from 'prop-types';
 import Container from '../components/Container';
 import Header from '../components/Header';
+import Banner from '../components/Banner';
 import TranslateInstance from '../i18n';
 
 export const Home = ({ t }) => {
@@ -21,6 +22,7 @@ export const Home = ({ t }) => {
       </Head>
       <Container>
         <Header />
+        <Banner />
       </Container>
     </>
   );
