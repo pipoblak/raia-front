@@ -3,28 +3,34 @@ import { Wrapper, Logo, Links, Link } from './styles';
 import { withTheme } from 'styled-components';
 import PropTypes from 'prop-types';
 import themes from '../../styles/themes';
+import TranslateInstance from '../../i18n';
 
-const Header = () => {
+export const Header = ({ t }) => {
   return (
-    <Wrapper data-testid="header">
+    <Wrapper t={t}>
       <Logo src={require('../../public/images/rd.png')} />
       <Links>
-        <Link href="#">HTML5</Link>
-        <Link href="#">CSS3</Link>
-        <Link href="#">JAVASCRIPT</Link>
-        <Link href="#">REACT</Link>
-        <Link href="#">REDUX</Link>
+        <Link href="#">{t('header.links.html5')}</Link>
+        <Link href="#">{t('header.links.css3')}</Link>
+        <Link href="#">{t('header.links.javascript')}</Link>
+        <Link href="#">{t('header.links.react')}</Link>
+        <Link href="#">{t('header.links.redux')}</Link>
       </Links>
     </Wrapper>
   );
 };
 
 Header.propTypes = {
-  theme: PropTypes.object.isRequired
+  theme: PropTypes.object.isRequired,
+  t: PropTypes.func.isRequired
 };
 
 Header.defaultProps = {
   theme: themes.default
 };
 
-export default withTheme(Header);
+Header.getInitialProps = async () => ({
+  namespacesRequired: ['common']
+});
+
+export default TranslateInstance.withTranslation('common')(withTheme(Header));

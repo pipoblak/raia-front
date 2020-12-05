@@ -1,14 +1,17 @@
 /* istanbul ignore file */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import App from 'next/app';
 import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
-import { appWithTranslation } from '../i18n';
+import TranslateInstance from '../i18n';
 import GlobalStyle from '../styles/global';
 import themes from '../styles/themes';
 
 const MyApp = ({ Component, pageProps }) => {
   const [theme, setTheme] = useState(themes.default);
+  useEffect(() => {
+    TranslateInstance.i18n.changeLanguage('ptBR');
+  });
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -19,11 +22,13 @@ const MyApp = ({ Component, pageProps }) => {
   );
 };
 
-MyApp.getInitialProps = async (appContext) => ({ ...(await App.getInitialProps(appContext)) });
+MyApp.getInitialProps = async (appContext) => ({
+  ...(await App.getInitialProps(appContext))
+});
 
 MyApp.propTypes = {
   Component: PropTypes.func.isRequired,
   pageProps: PropTypes.object.isRequired
 };
 
-export default appWithTranslation(MyApp);
+export default TranslateInstance.appWithTranslation(MyApp);

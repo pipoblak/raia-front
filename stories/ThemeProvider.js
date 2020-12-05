@@ -2,6 +2,8 @@ import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
 
+import TranslateInstance from '../i18n';
+
 const FlexContainer = styled.div`
   display: flex;
   width: 100%;
@@ -21,4 +23,4 @@ Provider.propTypes = {
   theme: PropTypes.object.isRequired
 };
 
-export default Provider;
+export default TranslateInstance.appWithTranslation(Provider);

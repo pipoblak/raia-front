@@ -10,9 +10,12 @@ export const Wrapper = styled.div`
 `;
 
 export const Container = styled.div`
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   height 100%;
-
+  @media(max-width: 1200px) {
+    padding: 0 16px;
+  }
 `;
 
 export default Container;
