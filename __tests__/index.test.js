@@ -2,14 +2,16 @@ import { render, screen } from '@testing-library/react';
 import Home from '../pages/index';
 import Header from '../components/Header';
 import { Wrapper, Link, Logo } from '../components/Header/styles';
-import { appWithTranslation, withTranslation } from '../i18n';
+import TranslateInstance from '../i18n';
 
 describe('Home', () => {
   var I18nApp, TranslatedHeader;
   beforeEach(async () => {
     await Home.getInitialProps();
     await Header.getInitialProps();
-    I18nApp = appWithTranslation(withTranslation('common')(Home));
+    I18nApp = TranslateInstance.appWithTranslation(
+      TranslateInstance.withTranslation('common')(Home)
+    );
   });
 
   it('renders without crashing', () => {
