@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import React, { useState } from 'react';
 import App from 'next/app';
 import PropTypes from 'prop-types';

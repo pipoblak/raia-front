@@ -3,5 +3,6 @@ export default {
   secondary: '#868686',
   first_card: '#FE9481',
   second_card: '#FCDA92',
-  third_card: '#9C8CB9'
+  third_card: '#9C8CB9',
+  bg_primary: require('../../public/images/bg.jpg')
 };

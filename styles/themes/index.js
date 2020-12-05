@@ -1,4 +1,7 @@
+import DefaultTheme from './default';
+import CustomTheme from './custom';
+
 export default {
-  ...require('./default'),
-  ...require('./custom')
+  default: DefaultTheme,
+  custom: CustomTheme
 };

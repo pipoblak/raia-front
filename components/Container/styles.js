@@ -5,12 +5,14 @@ export const Wrapper = styled.div`
   height: 100%;
   display: flex;
   justify-content: center;
+  background: url(${(p) => p.theme.bg_primary});
+  background-repeat: repeat;
 `;
 
 export const Container = styled.div`
   width: 1200px;
   height 100%;
-  background: ${(p) => p.theme.bg_primary};
+
 `;
 
 export default Container;

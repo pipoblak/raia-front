@@ -1,4 +1,17 @@
 {
   "presets": ["next/babel"],
-  "plugins": ["babel-plugin-styled-components"]
+  "plugins": [
+    "babel-plugin-styled-components",
+    [
+      "file-loader",
+      {
+        "name": "[name].[ext]",
+        "extensions": ["png", "jpg", "jpeg", "gif", "svg"],
+        "publicPath": "/images",
+        "outputPath": null,
+        "context": "",
+        "limit": 0
+      }
+    ]
+  ]
 }
