@@ -5,10 +5,17 @@ import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Posts from '../components/Posts';
 import Post, { defaultOnClick as defaultPostClick } from '../components/Post';
+import Footer from '../components/Footer';
 import { Wrapper as HeaderWrapper, Link, Logo } from '../components/Header/styles';
-import { Wrapper as BannerWrapper } from '../components/Banner/styles';
+import { Wrapper as BannerWrapper, Title, SubTitle, Colors } from '../components/Banner/styles';
 import { Wrapper as PostsWrapper, AdditionalInfoScrollDown } from '../components/Posts/styles';
 import { Wrapper as PostWrapper } from '../components/Post/styles';
+import {
+  Wrapper as FooterWrapper,
+  Brand,
+  Copyright,
+  Logo as FooterLogo
+} from '../components/Footer/styles';
 import TranslateInstance from '../i18n';
 import themes, { ThemeContext } from '../styles/themes';
 import { firstCardOnClick, firstCardEffect } from '../components/Posts/first_card_click';
@@ -25,6 +32,7 @@ describe('Home', () => {
     await Banner.getInitialProps();
     await Posts.getInitialProps();
     await Post.getInitialProps();
+    await Footer.getInitialProps();
     I18nApp = TranslateInstance.appWithTranslation(
       TranslateInstance.withTranslation('common')(Home)
     );
@@ -62,6 +70,24 @@ describe('Home', () => {
       const bannerClass = BannerWrapper.styledComponentId;
       const bannerRoot = document.getElementsByClassName(bannerClass);
       expect(bannerRoot.length).toBe(1);
+    });
+    it('have a Title', () => {
+      render(<I18nApp />);
+      const titleClass = Title.styledComponentId;
+      const titleRoot = document.getElementsByClassName(titleClass);
+      expect(titleRoot.length).toBe(1);
+    });
+    it('have 6 Subtitle', () => {
+      render(<I18nApp />);
+      const subTitleClass = SubTitle.styledComponentId;
+      const subTitleRoot = document.getElementsByClassName(subTitleClass);
+      expect(subTitleRoot.length).toBe(6);
+    });
+    it('have a colors', () => {
+      render(<I18nApp />);
+      const colorClass = Colors.styledComponentId;
+      const colorsRoot = document.getElementsByClassName(colorClass);
+      expect(colorsRoot.length).toBe(1);
     });
   });
 
@@ -131,6 +157,33 @@ describe('Home', () => {
       thirdCardOnClick(themes.default, setTheme, themes);
       thirdCardOnClick(themes.custom, setTheme, themes);
       expect(setTheme).toHaveBeenCalled();
+    });
+  });
+
+  describe('Footer', () => {
+    it('renders', () => {
+      render(<I18nApp />);
+      const footerClass = FooterWrapper.styledComponentId;
+      const footerRoot = document.getElementsByClassName(footerClass);
+      expect(footerRoot.length).toBe(1);
+    });
+    it('have 5 brands', () => {
+      render(<I18nApp />);
+      const brandsClass = Brand.styledComponentId;
+      const brandsRoot = document.getElementsByClassName(brandsClass);
+      expect(brandsRoot.length).toBe(5);
+    });
+    it('have 1 logo', () => {
+      render(<I18nApp />);
+      const logoClass = FooterLogo.styledComponentId;
+      const logoRoot = document.getElementsByClassName(logoClass);
+      expect(logoRoot.length).toBe(1);
+    });
+    it('have coprryght', () => {
+      render(<I18nApp />);
+      const copyClass = Copyright.styledComponentId;
+      const copyRoot = document.getElementsByClassName(copyClass);
+      expect(copyRoot.length).toBe(1);
     });
   });
 });

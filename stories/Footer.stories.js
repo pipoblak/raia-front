@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from '../components/Header';
+import Footer from '../components/Footer';
 import themes from '../styles/themes';
 import Provider from './ThemeProvider';
 
 export default {
-  title: 'Components/Header',
-  component: Header,
+  title: 'Components/Footer',
+  component: Footer,
   args: {
     theme: 'default'
   },
@@ -20,11 +20,11 @@ export default {
 const Template = (args) => (
   <Provider theme={themes[args.theme]}>
     <div>
-      <Header {...{ ...args, theme: undefined }} />
+      <Footer {...{ ...args, theme: undefined }} />
     </div>
   </Provider>
 );
 
-export const DefaultHeader = Template.bind({});
+export const DefaultFooter = Template.bind({});
 
-DefaultHeader.storyName = 'Header';
+DefaultFooter.storyName = 'Footer';

@@ -5,6 +5,7 @@ import Container from '../components/Container';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Posts from '../components/Posts';
+import Footer from '../components/Footer';
 import TranslateInstance from '../i18n';
 
 export const Home = ({ t }) => {
@@ -25,6 +26,7 @@ export const Home = ({ t }) => {
         <Header />
         <Banner />
         <Posts />
+        <Footer />
       </Container>
     </>
   );
