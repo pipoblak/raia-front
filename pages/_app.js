@@ -10,7 +10,8 @@ import themes, { ThemeContext } from '../styles/themes';
 const MyApp = ({ Component, pageProps }) => {
   const [theme, setTheme] = useState(themes.default);
   useEffect(() => {
-    TranslateInstance.i18n.changeLanguage('ptBR');
+    const locale = window.location.pathname.replaceAll('/', '');
+    TranslateInstance.i18n.changeLanguage(locale || 'ptBR');
   });
   return (
     <ThemeContext.Provider value={[theme, setTheme]}>
