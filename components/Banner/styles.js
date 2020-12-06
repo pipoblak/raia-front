@@ -42,6 +42,7 @@ export const SubTitle = styled.h1`
 export const Colors = styled.div`
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 `;
 
 export const ColorDot = styled.div`
