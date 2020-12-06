@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrapper, Title, SubTitle, Colors, ColorDot } from './styles';
+import { Wrapper, Title, SubTitle, Colors, ColorDot, Color } from './styles';
 import { withTheme } from 'styled-components';
 import PropTypes from 'prop-types';
 import themes from '../../styles/themes';
@@ -12,16 +12,26 @@ export const Banner = ({ t, theme }) => {
       <Title>{ReactHtmlParser(t('banner.title'))}</Title>
       <SubTitle>{ReactHtmlParser(t('banner.subtitle'))}</SubTitle>
       <Colors>
-        <ColorDot color={theme.primary} />
-        <SubTitle>{theme.primary},</SubTitle>
-        <ColorDot color={theme.secondary} />
-        <SubTitle>{theme.secondary},</SubTitle>
-        <ColorDot color={theme.first_card} />
-        <SubTitle>{theme.first_card},</SubTitle>
-        <ColorDot color={theme.second_card} />
-        <SubTitle>{theme.second_card},</SubTitle>
-        <ColorDot color={theme.third_card} />
-        <SubTitle>{theme.third_card}</SubTitle>
+        <Color>
+          <ColorDot color={theme.primary} />
+          <SubTitle>{theme.primary},</SubTitle>
+        </Color>
+        <Color>
+          <ColorDot color={theme.secondary} />
+          <SubTitle>{theme.secondary},</SubTitle>
+        </Color>
+        <Color>
+          <ColorDot color={theme.first_card} />
+          <SubTitle>{theme.first_card},</SubTitle>
+        </Color>
+        <Color>
+          <ColorDot color={theme.second_card} />
+          <SubTitle>{theme.second_card},</SubTitle>
+        </Color>
+        <Color>
+          <ColorDot color={theme.third_card} />
+          <SubTitle>{theme.third_card}</SubTitle>
+        </Color>
       </Colors>
     </Wrapper>
   );

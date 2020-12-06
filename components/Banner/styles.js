@@ -43,6 +43,7 @@ export const Colors = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
 `;
 
 export const ColorDot = styled.div`
@@ -50,6 +51,12 @@ export const ColorDot = styled.div`
   width: 8px;
   border-radius: 100%;
   background: ${(p) => p.color};
+`;
+
+export const Color = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export default Wrapper;
