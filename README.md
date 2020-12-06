@@ -1,4 +1,4 @@
-# raia-front
+![Build Status](https://img.shields.io/netlify/c38f8f64-20ce-4979-930f-c60a24dec39d?label=build) ![Tests](https://img.shields.io/badge/tests-21%20passed-brightgreen) ![Code Coverag](https://img.shields.io/badge/coverage-100%25-brightgreen)
 
 ## 📃 About
 
