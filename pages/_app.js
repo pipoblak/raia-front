@@ -6,12 +6,13 @@ import { ThemeProvider } from 'styled-components';
 import TranslateInstance from '../i18n';
 import GlobalStyle from '../styles/global';
 import themes, { ThemeContext } from '../styles/themes';
-
+import '../styles/styles.css';
 const MyApp = ({ Component, pageProps }) => {
   const [theme, setTheme] = useState(themes.default);
   useEffect(() => {
     const locale = window.location.pathname.replaceAll('/', '');
     TranslateInstance.i18n.changeLanguage(locale || 'ptBR');
+    document.getElementById('__next').style = 'display: flex !important;';
   });
   return (
     <ThemeContext.Provider value={[theme, setTheme]}>
