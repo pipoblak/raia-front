@@ -25,7 +25,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## 🌎 Internationalization
 
-This project was made using i18next with two available languages **ptBR**(default) and **en**, to use available languages its only need to put locale on pathname like this
+This project was made using i18next with two available languages **ptBR**(default) and **en**, to use available languages you only need to put locale on pathname like this
 
 > https://raia-front.netlify.app/en
 
