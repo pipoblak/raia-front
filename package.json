@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "test": "jest --watch",
+    "export": "next export",
     "coverage": "jest --coverage",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook",
